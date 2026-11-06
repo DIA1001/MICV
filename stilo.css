@@ -1,0 +1,255 @@
+:root {
+    --rosa: #f8c8dc;
+    --rosa-fuerte: #e58fb3;
+    --rosa-suave: #fff0f5;
+    --lila: #d9c8f5;
+    --menta: #c9efe0;
+    --texto: #2d232e;
+    --texto-secundario: #6c757d;
+}
+
+body {
+    background-color: var(--rosa-suave);
+    color: var(--texto);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding-top: 85px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 { 
+    color: var(--texto);
+    font-weight: 700;
+}
+
+.linea-titulo {
+    width: 60px;
+    height: 4px;
+    border: 0;
+    background-color: var(--rosa-fuerte);
+    opacity: 1;
+    margin-top: 0.4rem;
+    margin-bottom: 1.8rem;
+    border-radius: 4px;
+}
+
+/* Navbar con Glassmorphism */
+.navbar { 
+    background-color: rgba(248, 200, 220, 0.92); 
+    backdrop-filter: blur(8px);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand, .nav-link { 
+    color: var(--texto) !important; 
+    font-size: 0.95rem;
+}
+
+.nav-link {
+    transition: color 0.2s ease-in-out;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem !important;
+}
+
+.nav-link:hover, .nav-link.active { 
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--rosa-fuerte) !important;
+}
+
+/* Tarjeta y Foto de Perfil */
+.card-banner { 
+    height: 130px; 
+    background: linear-gradient(135deg, var(--rosa) 0%, var(--lila) 100%); 
+    border-radius: 20px 20px 0 0; 
+}
+
+.card-body-perfil { 
+    padding: 0 2rem 2rem; 
+}
+
+.cardPerfileImg {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: -80px;
+    border: 5px solid #ffffff;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.cardPerfileImg:hover {
+    transform: scale(1.03);
+}
+
+.rol { 
+    color: var(--rosa-fuerte); 
+}
+
+.datos-personales {
+    background-color: #ffffff;
+    border: 1px solid var(--rosa);
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: var(--rosa-suave);
+    color: var(--texto);
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.social a:hover { 
+    background-color: var(--rosa-fuerte); 
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+/* Estilo para cada Sección Individual */
+.seccion {
+    background-color: #ffffff;
+    border: 1px solid rgba(248, 200, 220, 0.6);
+    border-radius: 20px;
+    padding: 2.2rem;
+    transition: transform 0.2s ease;
+}
+
+/* Timeline para Educación */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--rosa);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--rosa-fuerte);
+    border: 2px solid #fff;
+}
+
+.date {
+    display: inline-block;
+    background-color: #f0eafb;
+    border-radius: 20px;
+    padding: .15rem .8rem;
+    font-size: 0.85rem;
+    color: var(--texto);
+}
+
+.date.activo { 
+    background-color: var(--rosa); 
+}
+
+/* Borde por color en Proyectos */
+.border-rosa { border-color: var(--rosa-fuerte) !important; }
+.border-lila { border-color: #b39ddb !important; }
+.border-menta { border-color: #80cbc4 !important; }
+
+/* Skills & Chips */
+.chip {
+    display: inline-block;
+    background-color: var(--rosa);
+    border-radius: 20px;
+    padding: .3rem 1rem;
+    color: var(--texto);
+}
+
+.chip.lila { background-color: var(--lila); }
+.chip.menta { background-color: var(--menta); }
+
+.progress { 
+    background-color: #f1f3f5; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar { 
+    background: linear-gradient(90deg, var(--rosa-fuerte) 0%, #d87093 100%); 
+    border-radius: 10px;
+}
+
+.skill-card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Croquis / Mapa */
+.croquis-container {
+    width: 100%;
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.croquis-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Formulario y Botones */
+.form-control { 
+    border: 1px solid var(--rosa); 
+    border-radius: 10px; 
+    padding: 0.65rem 0.9rem;
+}
+
+.form-control:focus { 
+    border-color: var(--rosa-fuerte); 
+    box-shadow: 0 0 0 0.2rem rgba(229, 143, 179, 0.2); 
+}
+
+.btn-pastel {
+    background-color: var(--rosa-fuerte);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-pastel:hover { 
+    background-color: #d97ba2; 
+    color: #fff; 
+    transform: translateY(-2px);
+}
+
+.info-contacto i { 
+    color: var(--rosa-fuerte); 
+    width: 24px; 
+}
+
+/* Botón flotante Volver Arriba */
+#btn-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    line-height: 45px;
+}
